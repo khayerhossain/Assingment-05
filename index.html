@@ -23,9 +23,9 @@
     }
 </style>
 
-<body class=" class=" fonts-poppins>
+<body class="fonts-poppins my-0 pt-4">
     <header>
-        <nav class="flex justify-between items-center bg-[#F4F7FF] p-5 ">
+        <nav class="flex justify-between items-center bg-[#F4F7FF] p-5 mt-4 mx-8 rounded-lg ">
             <div class="flex items-center gap-2">
                 <img class="w-10" src="assets/logo.png" alt="">
                 <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
@@ -35,7 +35,7 @@
                     <img src="assets/checkbox.png" alt="">
                     <p class=" text-2xl font-bold">23</p>
                 </div>
-                <img class="w-8" src="assets/theme-btn.png" alt="">
+                <img id="color-btn" class="w-8 cursor-pointer" src="assets/theme-btn.png" alt="">
             </div>
         </nav>
     </header>
@@ -44,7 +44,7 @@
             <!-- cards top part -->
             <div class="flex justify-around items-center gap-5 p-5 border-b-2 border-dashed border-gray-200">
                 <!-- frist -->
-                <div class="flex items-center justify-center gap-4  h-[125px] bg-[#F4F7FF] p-5 rounded-lg">
+                <div class="flex items-center justify-center gap-4 w-[240px]  h-[125px] bg-[#F4F7FF] p-5 rounded-lg">
                     <div>
                         <img class="w-7" src="assets/checkbox.png" alt="">
                     </div>
@@ -60,12 +60,12 @@
                     <h2 class="text-white text-2xl font-semibold">Discover Something New Today!</h2>
                 </div>
                 <!-- third -->
-                <div class="flex items-center justify-center gap-4  h-[125px] bg-[#F4F7FF] p-5 rounded-lg ">
+                <div class="flex items-center justify-center gap-4  h-[125px] bg-[#F4F7FF] p-8 rounded-lg">
                     <div>
                         <img class="w-7" src="assets/calender.png" alt="">
                     </div>
                     <div>
-                        <p class="">Wed,
+                        <p id="display-date" class="">Wed,
                             <br>
                             <span class="text-xl font-bold">Jul 28 2025</span>
                         </p>
@@ -75,9 +75,9 @@
             <!-- cards myltliple part -->
             <div class="grid grid-cols-3">
                 <!-- card 1 -->
-                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto">
+                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto card-btn card">
                     <p class="bg-white  mb-6 p-2 w-24 rounded-sm">ShopEase</p>
-                    <h2 class="text-xl font-semibold">Fix Mobile Button Issue </h2>
+                    <h2 class="text-xl font-semibold card-title">Fix Mobile Button Issue </h2>
                     <p class="bg-white mt-2 p-4 rounded-md border-b-2 border-dashed border-gray-200 mb-3">Debug using
                         Chrome
                         <br> DevTools, check for overlapping...
@@ -90,9 +90,9 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto">
+                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto card-btn card">
                     <p class="bg-white  mb-6 p-2 w-24 rounded-sm">CloudSync</p>
-                    <h2 class="text-xl font-semibold">Add Dark Mode</h2>
+                    <h2 class="text-xl font-semibold card-title">Add Dark Mode</h2>
                     <p class="bg-white mt-2 p-4 rounded-md border-b-2 border-dashed border-gray-200 mb-3">Store the
                         user's preference in localStorage, update CSS variables...
                     </p>
@@ -104,9 +104,9 @@
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto">
+                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto card-btn card">
                     <p class="bg-white  mb-6 p-2 w-24 rounded-sm">SwiftPay</p>
-                    <h2 class="text-xl font-semibold">Optimize Home Page </h2>
+                    <h2 class="text-xl font-semibold card-title">Optimize Home Page </h2>
                     <p class="bg-white mt-2 p-4 rounded-md border-b-2 border-dashed border-gray-200 mb-3">Debug using
                         Chrome
                         <br> DevTools, check for overlapping...
@@ -119,9 +119,9 @@
                     </div>
                 </div>
                 <!-- card 4 -->
-                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto">
+                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto card-btn card">
                     <p class="bg-white  mb-6 p-2 w-24 rounded-sm">Meta</p>
-                    <h2 class="text-xl font-semibold">Add New Emoji </h2>
+                    <h2 class="text-xl font-semibold card-title">Add New Emoji </h2>
                     <p class="bg-white mt-2 p-4 rounded-md border-b-2 border-dashed border-gray-200 mb-3">Debug using
                         Chrome
                         <br> DevTools, check for overlapping...
@@ -134,9 +134,9 @@
                     </div>
                 </div>
                 <!-- card 5 -->
-                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto">
+                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto card-btn card">
                     <p class="bg-white  mb-6 p-2 w-24 rounded-sm">Glassdoar</p>
-                    <h2 class="text-xl font-semibold">Improve Job Searching </h2>
+                    <h2 class="text-xl font-semibold card-title">Improve Job Searching </h2>
                     <p class="bg-white mt-2 p-4 rounded-md border-b-2 border-dashed border-gray-200 mb-3">Debug using
                         Chrome
                         <br> DevTools, check for overlapping...
@@ -149,9 +149,9 @@
                     </div>
                 </div>
                 <!-- card 6 -->
-                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto">
+                <div class="bg-[#F4F7FF] p-10 rounded-lg m-5 w-[310px] h-auto card-btn card">
                     <p class="bg-white  mb-6 p-2 w-24 rounded-sm">Google LLc</p>
-                    <h2 class="text-xl font-semibold">Integrate OpenAI API </h2>
+                    <h2 class="text-xl font-semibold card-title">Integrate OpenAI API </h2>
                     <p class="bg-white mt-2 p-4 rounded-md border-b-2 border-dashed border-gray-200 mb-3">Debug using
                         Chrome
                         <br> DevTools, check for overlapping...
@@ -167,13 +167,13 @@
         </section>
         <section>
             <!-- activity side part -->
-            <div class="bg-[#F4F7FF] w-[300px] h-[900px] rounded-lg p-5 text-center ">
+            <div id="activity-container" class="bg-[#F4F7FF] w-[300px] h-[1020px] rounded-lg p-5 text-center">
                 <div class="flex items-center justify-center mb-4 gap-2">
                     <img class="w-5" src=" assets/activity.png" alt="">
                     <p class="font-semibold text-lg">Activity Log</p>
                 </div>
-                <div>
-                    <button class="btn bg-blue-600 text-white">Clear History</button>
+                <div class="border-b-dashed border-gray-200">
+                    <button id="history-btn" class="btn bg-blue-600 text-white">Clear History</button>
                 </div>
             </div>
         </section>
@@ -183,5 +183,6 @@
     </footer>
 </body>
 <script src="scripts/script.js"></script>
+<script src="scripts/activity.js"></script>
 
 </html>
