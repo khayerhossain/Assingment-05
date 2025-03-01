@@ -5,10 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
+    <link
+        href="https://cdn.jsdelivr.net/combine/npm/daisyui@5/base/properties.css,npm/daisyui@5/base/reset.css,npm/daisyui@5/base/rootcolor.css,npm/daisyui@5/base/rootscrollgutter.css,npm/daisyui@5/base/rootscrolllock.css,npm/daisyui@5/base/scrollbar.css,npm/daisyui@5/base/svg.css,npm/daisyui@5/components/button.css,npm/daisyui@5/components/checkbox.css,npm/daisyui@5/components/input.css,npm/daisyui@5/components/menu.css,npm/daisyui@5/components/select.css,npm/daisyui@5/components/toggle.css,npm/daisyui@5/theme/light.css"
+        rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+<style>
+    .fonts-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
 
-<body>
+<body class="fonts-poppins">
+    <header>
+        <nav class="flex justify-between items-center bg-[#F4F7FF] p-5 mt-4 mx-8 rounded-lg ">
+            <div class="flex items-center gap-2">
+                <img class="w-8" src="assets/logo.png" alt="">
+                <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div>
+                <button id="back-btn" class="btn bg-blue-600 text-white rounded-lg">Back to Desk</button>
+            </div>
+        </nav>
+    </header>
+    <main>
 
+    </main>
 </body>
+<script src="scripts/discover.js"></script>
 
 </html>

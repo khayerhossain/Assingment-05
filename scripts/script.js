@@ -17,3 +17,7 @@ function showDate() {
     date.textContent = currentDate.toLocaleDateString('en-US', options);
 }
 showDate();
+// discover button area
+document.getElementById('discover-btn').addEventListener('click', function () {
+    window.location.href = "./blog.html";
+});

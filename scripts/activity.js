@@ -5,18 +5,26 @@ for (let i = 0; i < cardButtons.length; i++) {
 
         const card = cardButtons[i].closest('.card');
         const cardTitle = card.querySelector('.card-title').textContent;
+        alert("Board updated Successfully!");
 
-        const currentDateTime = new Date().toLocaleString();
+        clickedButtons++;
+        if (clickedButtons === cardButtons.length) {
+            alert(" congratulations! you have completed all the current tasks!");
 
-        const activity = document.getElementById('activity-container');
-        const p = document.createElement('p');
-        p.textContent = `You have completed the task ${cardTitle} on ${currentDateTime}`;
-        activity.appendChild(p);
+            const currentDateTime = new Date().toLocaleString();
+
+            const activity = document.getElementById('activity-container');
+            const p = document.createElement('p');
+            p.textContent = `You have completed the task ${cardTitle} on ${currentDateTime}`;
+            activity.appendChild(p);
+        }
     });
 }
 
-
 document.getElementById('history-btn').addEventListener('click', function () {
     const activity = document.getElementById('activity-container');
-    activity.innerHTML = ' ';
-})
+    const logEntries = activity.querySelectorAll('p');
+    logEntries.forEach(function (history) {
+        history.remove();
+    });
+});
