@@ -7,19 +7,16 @@ for (let i = 0; i < cardButtons.length; i++) {
         const cardTitle = card.querySelector('.card-title').textContent;
         alert("Board updated Successfully!");
 
-        clickedButtons++;
-        if (clickedButtons === cardButtons.length) {
-            alert(" congratulations! you have completed all the current tasks!");
+        const currentDateTime = new Date().toLocaleString();
 
-            const currentDateTime = new Date().toLocaleString();
+        const activity = document.getElementById('activity-container');
+        const p = document.createElement('p');
+        p.textContent = `You have completed the task ${cardTitle} on ${currentDateTime}`;
+        activity.appendChild(p);
 
-            const activity = document.getElementById('activity-container');
-            const p = document.createElement('p');
-            p.textContent = `You have completed the task ${cardTitle} on ${currentDateTime}`;
-            activity.appendChild(p);
-        }
     });
 }
+// history section
 
 document.getElementById('history-btn').addEventListener('click', function () {
     const activity = document.getElementById('activity-container');
